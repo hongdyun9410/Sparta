@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+
+    <title>1주차 숙제 </title>
+    <style>
+        .container-center{
+            display: block;
+            width: 1000px;
+            height: 1000px;
+            margin: auto;
+            margin-top:10%;
+ /*           border : 1px solid black;*/
+        }
+        .title{
+            text-align: center;
+        }
+
+        .center{
+            display: block;
+            margin: auto;
+
+        }
+
+        .product{
+            border-radius: 30px;
+            display: block;
+            width: 700px;
+            height: 500px;
+            margin: auto;
+        }
+        .info{
+            width: 600px;
+            margin: auto;
+        }
+
+        .btn-1 {
+            margin: auto;
+            width: 100px;
+            display: block;
+        }
+
+        .price {
+            font-size: 20px;
+        }
+        .introduce{
+            margin-left: 200px;
+        }
+
+        .input-group-text{
+            width: 100px;
+        }
+    </style>
+    <script>
+        function order(){
+            window.alert("주문이 완료 되었습니다");
+        }
+    </script>
+</head>
+
+<body>
+<div class="container-center">
+    <div class="title">
+        <h1>쇼핑몰을 예시</h1>
+    </div>
+
+    <div class="center">
+        <img class="product" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0QQ0ePw80k4VpWNTySlUyFUX4rrQcx-hQPIW341WPtf5ufLOHybdZIel4s1BLe0Bd3k8&usqp=CAU">
+    </div>
+    <div class="center introduce">
+        <h1>애플워치 팝니다 <span class="price">가격:400,000원</span></h1>
+        <p>크크루삥뽀옹..어쩌구저쩌고 사고싶다 애플워치</p>
+    </div>
+
+
+
+    <div>
+        <div class="info">
+            <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                    <span class="input-group-text">주문자이름</span>
+                </div>
+                <input type="text" class="form-control" aria-label="Default" aria-describedby="inputGroup-sizing-default">
+            </div>
+            <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                   <span class="input-group-text">수량</span>
+                </div>
+                <select class="custom-select" id="inputGroupSelect01">
+                    <option selected>-- 수량을 선택하세요 --</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                </select>
+            </div>
+            <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                    <span class="input-group-text">주소</span>
+                </div>
+                <input type="text" class="form-control" aria-label="Default" aria-describedby="inputGroup-sizing-default">
+            </div>
+            <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                    <span class="input-group-text">전화번호</span>
+                </div>
+                <input type="text" class="form-control" aria-label="Default" aria-describedby="inputGroup-sizing-default">
+            </div>
+        </div>
+
+        <div class="center">
+            <button type="button" onclick="order()" class="btn btn-primary btn-1">주문하기</button>
+        </div>
+    </div>
+</div>
+</div>
+</body>
+
+</html>
