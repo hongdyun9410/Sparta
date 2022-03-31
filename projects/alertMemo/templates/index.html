@@ -63,7 +63,9 @@
             }
 
             function postArticle() {
+                alert("시작");
                 let url = $('#post-url').val()
+                console.log(url);
                 let comment = $('#post-comment').val()
 
                 $.ajax({
@@ -78,6 +80,7 @@
             }
 
             function showArticles() {
+                alert("에이작스입갤");
                 $.ajax({
                     type: "GET",
                     url: "/memo",
